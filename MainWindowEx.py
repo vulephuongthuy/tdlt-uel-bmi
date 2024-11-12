@@ -35,7 +35,8 @@ class MainWindowEx(Ui_MainWindow):
     def show(self):
         self.MainWindow.show()
     def thoat(self):
-        self.pushButtonClose.clicked.MainWindow.close()
+        self.MainWindow.close()
+
 
 
 
