@@ -8,6 +8,7 @@ class MainWindowEx(Ui_MainWindow):
         super().setupUi(MainWindow)
         self.MainWindow=MainWindow
         self.pushButtonCalculate.clicked.connect(self.BMI_calculate)
+        self.pushButtonClose.clicked.connect(self.thoat)
     def BMI_calculate(self):
         weight=float(self.lineEdit.text())
         height=float(self.lineEdit_2.text())
@@ -29,8 +30,8 @@ class MainWindowEx(Ui_MainWindow):
             comment="Obese Class I"
         else:
             comment="Obese Class II"
-        self.label_6.setText((str(BMI)))
-        self.label_8.setText(comment)
+        self.label_9.setText((str(BMI)))
+        self.label_10.setText(comment)
     def show(self):
         self.MainWindow.show()
     def thoat(self):
