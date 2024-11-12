@@ -30,13 +30,12 @@ class MainWindowEx(Ui_MainWindow):
             comment="Obese Class I"
         else:
             comment="Obese Class II"
-        self.label_6.setText((str(BMI)))
-        self.label_8.setText(comment)
+        self.label_9.setText((str(BMI)))
+        self.label_10.setText(comment)
     def show(self):
         self.MainWindow.show()
     def thoat(self):
-        self.MainWindow.close()
-
+        self.pushButtonClose.clicked.MainWindow.close()
 
 
 
